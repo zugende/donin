@@ -70,19 +70,19 @@ export default {
   },
   async mounted() {
     this.youtube = await this.$axios.$get(
-      'https://api.nindo.de/ranks/charts/youtube/rankViews/small'
+      'https://cors-anywhere.herokuapp.com/https://api.nindo.de/ranks/charts/youtube/rankViews/small'
     )
     this.instagram = await this.$axios.$get(
-      'https://api.nindo.de/ranks/charts/instagram/rankLikes/small'
+      'https://cors-anywhere.herokuapp.com/https://api.nindo.de/ranks/charts/instagram/rankLikes/small'
     )
     this.tiktok = await this.$axios.$get(
-      'https://api.nindo.de/ranks/charts/tiktok/rankLikes/small'
+      'https://cors-anywhere.herokuapp.com/https://api.nindo.de/ranks/charts/tiktok/rankLikes/small'
     )
     this.twitter = await this.$axios.$get(
-      'https://api.nindo.de/ranks/charts/twitter/rankLikes/small'
+      'https://cors-anywhere.herokuapp.com/https://api.nindo.de/ranks/charts/twitter/rankLikes/small'
     )
     this.twitch = await this.$axios.$get(
-      'https://api.nindo.de/ranks/charts/twitch/rankViewer/small'
+      'https://cors-anywhere.herokuapp.com/https://api.nindo.de/ranks/charts/twitch/rankViewer/small'
     )
   },
 }
